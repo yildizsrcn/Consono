@@ -1,0 +1,111 @@
+.margin{
+    background-color: #D8F0E8;;
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+h1{
+
+    padding-left: 40px;
+    color: rgb(0, 128, 113);
+    font-size:xx-large;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.timer {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    padding-right: 20px;
+  }
+
+  .intro-image {
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+    
+  .image{
+    display: flex;
+
+  }
+  
+  #start-button {
+    
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #D8F0E8;
+    color: rgb(0, 128, 113);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+    
+}
+
+#start-button:hover {
+    background-color: #5eb396; 
+}
+ 
+button{
+    
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #D8F0E8; /* Blue background */
+    color: rgb(0, 128, 113);
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5eb396;
+}
+
+form{
+    display: flexbox;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    text-wrap: 15px;
+    
+}
+
+.logo-image{
+
+    width: 100px;
+    position:fixed;
+    bottom: 0px;
+    left: 10px;
+    padding-bottom: 14px;
+  }
+
+
+  footer {
+ 
+    position: fixed;
+    bottom: 20;
+    left: 0;
+    width: 100%;
+    height:4px;
+    background-color: #D8F0E8;
+    padding: 0px 0;
+    text-align: right;
+
+    /* Add this for the full-width line */
+    border-top: 1px solid #D8F0E8; }
+
+    .reserve{
+        padding-right: 20px;
+        text-align: right;
+        font-size:small;
+    }
