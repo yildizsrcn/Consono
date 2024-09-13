@@ -74,7 +74,7 @@ form{
     text-align: center;
 }
 
-p{
+p{    
     text-align: center;
     text-wrap: 15px;
     
@@ -89,7 +89,10 @@ p{
     padding-bottom: 14px;
   }
 
-
+  .footer-line{
+    position: fixed;
+    
+}
   footer {
  
     position: fixed;
@@ -108,4 +111,18 @@ p{
         padding-right: 20px;
         text-align: right;
         font-size:small;
+        position:fixed;
+        bottom: 0px;
+        right: 10px;
+        padding-bottom: 14px;
     }
+
+    #question-container ul {
+        padding-left: 20px;
+    }
+    
+    #question-container li {
+        margin-bottom: 10px;
+    }
+    
+  
