@@ -40,8 +40,8 @@ let questions = [
         "3 Quando potresti avere più bisogno di un supporto per le tue scelte finanziarie? (una risposta)?",
       options: [
         "· quando devo prendere una decisione importante come ad esempio comperare una casa", 
-        '·  quando mi trovo in una situazione di crisi finanziaria (debiti, spese impreviste, riduzione dello stipendio, perdita del lavoro di un familiare, poca liquidità)', 
-        "·  quando riesco a risparmiare una discreta somma, che tengo disponibile sul conto corrente"],
+        '· quando mi trovo in una situazione di crisi finanziaria (debiti, spese impreviste, riduzione dello stipendio, perdita del lavoro di un familiare, poca liquidità)', 
+        "· quando riesco a risparmiare una discreta somma, che tengo disponibile sul conto corrente"],
       
     },
     {
@@ -56,9 +56,10 @@ let questions = [
     {
       text:
         "5 Rispetto alle tue finanze personali, quale frase ti rappresenta? (una rispost· ",
-      options: ["· voglio poter scegliere da sola / solo, ma vorrei che qualcuno potesse ‘validare’ la mia decisione", 
-        "·  vorrei avere delle indicazioni sulla cui base poter fare scelte consapevoli", 
-        "·  vorrei che qualcuno mi dicesse esattamente che cosa fare"],
+      options: [
+        "· voglio poter scegliere da sola / solo, ma vorrei che qualcuno potesse ‘validare’ la mia decisione", 
+        "· vorrei avere delle indicazioni sulla cui base poter fare scelte consapevoli", 
+        "· vorrei che qualcuno mi dicesse esattamente che cosa fare"],
       
     },
     
@@ -134,7 +135,7 @@ let questions = [
       {
         text: "12  Come imposti la tua gestione delle finanze? Scegli la frase che ti rappresenta di più (una rispost· ",
         options: [
-          "· ho una idea esatta delle mie spese ricorrenti, tengo segnate tutte le spese che faccio e le pianifico nel mese ",
+          "·  ho una idea esatta delle mie spese ricorrenti, tengo segnate tutte le spese che faccio e le pianifico nel mese ",
           "·  non ho idea di quanto spendo nel mese per cibo, utenze, generi di prima necessità",
           "·  se mi arriva una raccomandata tremo",
           "·  se capitasse un imprevisto, anche di modica entità, dovrei ricorrere a un prestito",
@@ -156,9 +157,9 @@ let questions = [
       {
         text: "14  Quando pianifichi il tuo bilancio mensile, quanto consideri importante il risparmio? (una rispost· ",
         options: [
-          "·  Il risparmio è la mia priorità assoluta, cerco di mettere da parte una parte consistente del mio reddito ogni mese",
+          "· Il risparmio è la mia priorità assoluta, cerco di mettere da parte una parte consistente del mio reddito ogni mese",
           "· Il risparmio è importante, ma spesso finisco per spenderlo in altre cose prima di metterlo da parte",
-          "·  Non riesco a risparmiare nulla, ogni mese arrivo a fine mese a stento",
+          "· Non riesco a risparmiare nulla, ogni mese arrivo a fine mese a stento",
         ],
         
 
@@ -168,7 +169,7 @@ let questions = [
         options: [
           "· Voglio ottenere un rendimento sicuro anche se modesto, senza rischiare troppo il capitale iniziale ",
           "· Voglio massimizzare il rendimento dei miei investimenti, anche se ciò comporta un certo livello di rischio",
-          "·  Voglio investire in modo equilibrato, cercando di ottenere un buon rendimento senza espormi a troppi rischi",
+          "· Voglio investire in modo equilibrato, cercando di ottenere un buon rendimento senza espormi a troppi rischi",
         ],
         
 
@@ -177,7 +178,7 @@ let questions = [
         text: "16  Quando ti trovi di fronte a un acquisto importante, come una casa o un auto, come pianifichi di finanziarlo? (una rispost· ",
         options: [
           "·  Studio attentamente le opzioni di finanziamento disponibili e scelgo quella che mi offre le migliori condizioni in termini di tassi d'interesse e flessibilità di pagamento",
-          "· Mi affido a prestiti bancari o finanziamenti per coprire il costo dell'n acquisto",
+          "·  Mi affido a prestiti bancari o finanziamenti per coprire il costo dell'n acquisto",
           "·  Cerco di risparmiare il più possibile in anticipo per pagare l' acquisto in contanti o con un versamento consistente",
           ,
         ],
@@ -187,8 +188,8 @@ let questions = [
       {
         text: "17  Quanto sei consapevole dei tuoi diritti e delle tue responsabilità finanziarie, ad esempio nei confronti delle banche o delle compagnie assicurative? ",
         options: [
-          "· Non ho molta chiarezza sui miei diritti e responsabilità finanziarie, preferisco fidarmi delle istituzioni o delle persone che mi forniscono servizi finanziari ",
-          "· Sono consapevole dei miei diritti e responsabilità finanziarie di base, ma potrei approfondire meglio l'argomento",
+          "·  Non ho molta chiarezza sui miei diritti e responsabilità finanziarie, preferisco fidarmi delle istituzioni o delle persone che mi forniscono servizi finanziari ",
+          "·  Sono consapevole dei miei diritti e responsabilità finanziarie di base, ma potrei approfondire meglio l'argomento",
           "·  Conosco bene i miei diritti e responsabilità finanziarie e li faccio valere attivamente quando necessario",
         ],
         
@@ -196,8 +197,8 @@ let questions = [
       {
         text: "18  Quando pianifichi il tuo futuro finanziario, quanto consideri importante l' aspetto della diversificazione? (una rispost· ",
         options: [
-          "· Non ho molta chiarezza su cosa significhi diversificare i miei investimenti e non lo considero particolarmente importante ",
-          "· Credo che diversificare i miei investimenti possa essere utile, ma non ho ancora implementato una strategia di diversificazione",
+          "·  Non ho molta chiarezza su cosa significhi diversificare i miei investimenti e non lo considero particolarmente importante ",
+          "·  Credo che diversificare i miei investimenti possa essere utile, ma non ho ancora implementato una strategia di diversificazione",
           "·  Ritengo che la diversificazione sia fondamentale per mitigare i rischi e massimizzare i rendimenti dei miei investimenti, quindi la tengo sempre in considerazione quando pianifico il mio futuro finanziario",
         ],
        
@@ -207,7 +208,7 @@ let questions = [
         text: "19  Quando hai a che fare con questioni finanziarie complesse, preferisci: (una rispost· ",
         options: [
           "·  Prendere decisioni da solo/sola, anche se significa affrontare qualche difficoltà nel processo decisionale",
-          "· Richiedere il parere di esperti o consulenti finanziari per avere un opinione esterna e prendere decisioni più informate",
+          "·  Richiedere il parere di esperti o consulenti finanziari per avere un opinione esterna e prendere decisioni più informate",
           "·  Evitare del tutto le questioni finanziarie complesse, sperando che si risolvano da sole nel tempo",
         ],
         
@@ -217,9 +218,9 @@ let questions = [
         text: "20  Quando guardi al futuro, quali sono le tue principali preoccupazioni finanziarie? (massimo due risposte)",
         options: [
           "·  La possibilità di non avere abbastanza risparmi per il pensionamento",
-          "· L'incapacità di far fronte a spese impreviste, come cure mediche costose o riparazioni di emergenza",
+          "·  L'incapacità di far fronte a spese impreviste, come cure mediche costose o riparazioni di emergenza",
           "·  La paura di perdere il lavoro o di subire una riduzione del reddito nel tempo",
-          "· Il timore di non riuscire a raggiungere i miei obiettivi finanziari a lungo termine, come l'acquisto di una casa o il finanziamento dell'istruzione dei figli ",
+          "·  Il timore di non riuscire a raggiungere i miei obiettivi finanziari a lungo termine, come l'acquisto di una casa o il finanziamento dell'istruzione dei figli ",
         ],
         
 
