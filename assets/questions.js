@@ -47,9 +47,9 @@ let questions = [
     {
       text: "4 È capitato a chiunque nella vita di vivere un imprevisto con implicazioni economiche inattese,cioè spese non previste, anche di entità considerevole. Le persone si tutelano per situazioni simili con le polizze di assicurazione. Perchè? (una rispost· ",
       options: [
-        "·  l’assicurazione sostiene in totale o in parte le conseguenze economiche dell’imprevisto",
-        "·  l’assicurazione annulla gli effetti derivanti dall’imprevisto",
-        "·  l’assicurazione previene un imprevisto",
+        "· l’assicurazione sostiene in totale o in parte le conseguenze economiche dell’imprevisto",
+        "· l’assicurazione annulla gli effetti derivanti dall’imprevisto",
+        "· l’assicurazione previene un imprevisto",
       ],
       
     },
@@ -68,28 +68,28 @@ let questions = [
       text:
         "6 Ti sentiresti a tuo agio se dovessi parlare di temi finanziari con un’esperta / un esperto? (scegliere una rispost· ",
       options: [
-        "·  sì, sarebbe un sollievo avere una persona con cui poter parlare delle mie difficoltà finanziarie",
-        "·  non voglio che altri sappiano che ho dei debiti",
-        "·  sì, vorrei delle indicazioni su come gestire il mio bilancio personale",
-        "·  nella mia famiglia non si parla di soldi",
-        "·  non saprei nemmeno che cosa chiedere",
-        "·  non ho soldi a sufficienza per parlarne",
-        "·  non voglio affidare ad altri il controllo",
-        "·  sì vorrei che qualcuno mi aiutasse a capire come valutare i rischi e il potenziale di un investimento",
+        "· sì, sarebbe un sollievo avere una persona con cui poter parlare delle mie difficoltà finanziarie",
+        "· non voglio che altri sappiano che ho dei debiti",
+        "· sì, vorrei delle indicazioni su come gestire il mio bilancio personale",
+        "· nella mia famiglia non si parla di soldi",
+        "· non saprei nemmeno che cosa chiedere",
+        "· non ho soldi a sufficienza per parlarne",
+        "· non voglio affidare ad altri il controllo",
+        "· sì vorrei che qualcuno mi aiutasse a capire come valutare i rischi e il potenziale di un investimento",
       ],
       
     },
     {
       text: "7 Che cosa ti interessa di più? (massimo 2 risposte)",
       options: [
-        "·  anticipo dello stipendio",
-        "·  prestiti a breve termine",
-        "·  carte di credito e scoperti di conto",
-        "·  risparmio di denaro",
-        "·  budgeting e pianificazione",
-        "·  pensione",
-        "·  investimenti",
-        "·  assicurazioni",
+        "· anticipo dello stipendio",
+        "· prestiti a breve termine",
+        "· carte di credito e scoperti di conto",
+        "· risparmio di denaro",
+        "· budgeting e pianificazione",
+        "· pensione",
+        "· investimenti",
+        "· assicurazioni",
 
       ],
       
@@ -97,59 +97,59 @@ let questions = [
     {
         text: "8 Vuoi aprire un nuovo conto corrente! Hai scelto la banca e ora ti viene richiesto di sottoscrivere il contratto.Come agisci? (una rispost· ",
         options: [
-          "·  leggo tutto il documento, se ci sono cose che non capisco chiedo per ottenere informazioni, solo quando mi è tutto chiaro firmo",
-          "·  non serve leggere, la firma è una pura formalità perché si tratta di una normativa standard, già controllata dagli enti di vigilanza",
-          "·  chiedo che mi vengano raccontati i contenuti del documento, perché tanto anche se leggo non comprendo le clausole che sono scritte con terminologia tecnica che non conosco",
+          "· leggo tutto il documento, se ci sono cose che non capisco chiedo per ottenere informazioni, solo quando mi è tutto chiaro firmo",
+          "· non serve leggere, la firma è una pura formalità perché si tratta di una normativa standard, già controllata dagli enti di vigilanza",
+          "· chiedo che mi vengano raccontati i contenuti del documento, perché tanto anche se leggo non comprendo le clausole che sono scritte con terminologia tecnica che non conosco",
         ],
         
       },
       {
         text: "9 In quale affermazione ti ritrovi di più? (una rispost· ",
         options: [
-          "·  fatico ad arrivare a fine mese e potrei avere bisogno di un supporto",
-          "·  sono ok con la gestione dei miei soldi, ma vorrei migliorare",
-          "·  vorrei saper pianificare meglio",
-          "·  sono finanziariamente esperto, ma vorrei ottimizzare le mie finanze",
+          "· fatico ad arrivare a fine mese e potrei avere bisogno di un supporto",
+          "· sono ok con la gestione dei miei soldi, ma vorrei migliorare",
+          "· vorrei saper pianificare meglio",
+          "· sono finanziariamente esperto, ma vorrei ottimizzare le mie finanze",
         ],
         
       },
       {
         text: "10  0 Hai un conto corrente senza spese di gestione. Ricevi interessi con tasso dell’1% annuo. Con l’inflazione al 5% annua, dopo un anno, con il denaro depositato sul tuo conto corrente, sarai in grado di acquistare: (una rispost· ",
         options: [
-          "·  le stesse cose che puoi acquistare oggi",
-          "·  meno di quello che puoi acquistare oggi",
-          "·  più di quello che puoi acquistare oggi",
+          "· le stesse cose che puoi acquistare oggi",
+          "· meno di quello che puoi acquistare oggi",
+          "· più di quello che puoi acquistare oggi",
         ],
         
       },
       {
         text: "11 Come gestisci le tue utenze? (una rispost· ",
         options: [
-          "·  non gestisco le bollette / le gestisce qualcun altro",
-          "·  non so fare previsioni sulle mie bollette, le gestisco man mano che arrivano",
-          "·  ho una idea approssimativa degli importi e delle date di scadenza",
-          "·  so esattamente quando scadono e ho una conoscenza precisa di quale sarà l’importo delle bollette",
+          "· non gestisco le bollette / le gestisce qualcun altro",
+          "· non so fare previsioni sulle mie bollette, le gestisco man mano che arrivano",
+          "· ho una idea approssimativa degli importi e delle date di scadenza",
+          "· so esattamente quando scadono e ho una conoscenza precisa di quale sarà l’importo delle bollette",
         ],
         
       },
       {
         text: "12  Come imposti la tua gestione delle finanze? Scegli la frase che ti rappresenta di più (una rispost· ",
         options: [
-          "·  ho una idea esatta delle mie spese ricorrenti, tengo segnate tutte le spese che faccio e le pianifico nel mese ",
-          "·  non ho idea di quanto spendo nel mese per cibo, utenze, generi di prima necessità",
-          "·  se mi arriva una raccomandata tremo",
-          "·  se capitasse un imprevisto, anche di modica entità, dovrei ricorrere a un prestito",
-          "·  conservo tutti gli scontrini e li controllo con l’estratto conto",
+          "· ho una idea esatta delle mie spese ricorrenti, tengo segnate tutte le spese che faccio e le pianifico nel mese ",
+          "· non ho idea di quanto spendo nel mese per cibo, utenze, generi di prima necessità",
+          "· se mi arriva una raccomandata tremo",
+          "· se capitasse un imprevisto, anche di modica entità, dovrei ricorrere a un prestito",
+          "· conservo tutti gli scontrini e li controllo con l’estratto conto",
         ],
         
       },
       {
         text: "13  Ti tamponano mentre sei alla guida della tua auto. Proponi di compilare la constatazione amichevole. L’altro automobilista dice che la colpa è tua, mentre tu non la pensi così. Che cosa fai? (una rispost· ",
         options: [
-          "·  cerco dei testimoni che confermino la mia versione",
-          "·  faccio scrivere sia la mia versione che la sua",
-          "·  faccio riparare l’auto perché ne ho bisogno, poi andrò all’assicurazione e spiegherò tutto",
-          "·  compilo il modulo di constatazione amichevole con la mia versione e la mando alla mia assicurazione",
+          "· cerco dei testimoni che confermino la mia versione",
+          "· faccio scrivere sia la mia versione che la sua",
+          "· faccio riparare l’auto perché ne ho bisogno, poi andrò all’assicurazione e spiegherò tutto",
+          "· compilo il modulo di constatazione amichevole con la mia versione e la mando alla mia assicurazione",
         ],
         
       },
@@ -177,9 +177,9 @@ let questions = [
       {
         text: "16  Quando ti trovi di fronte a un acquisto importante, come una casa o un auto, come pianifichi di finanziarlo? (una rispost· ",
         options: [
-          "·  Studio attentamente le opzioni di finanziamento disponibili e scelgo quella che mi offre le migliori condizioni in termini di tassi d'interesse e flessibilità di pagamento",
-          "·  Mi affido a prestiti bancari o finanziamenti per coprire il costo dell'n acquisto",
-          "·  Cerco di risparmiare il più possibile in anticipo per pagare l' acquisto in contanti o con un versamento consistente",
+          "· Studio attentamente le opzioni di finanziamento disponibili e scelgo quella che mi offre le migliori condizioni in termini di tassi d'interesse e flessibilità di pagamento",
+          "· Mi affido a prestiti bancari o finanziamenti per coprire il costo dell'n acquisto",
+          "· Cerco di risparmiare il più possibile in anticipo per pagare l' acquisto in contanti o con un versamento consistente",
           ,
         ],
         
@@ -188,18 +188,18 @@ let questions = [
       {
         text: "17  Quanto sei consapevole dei tuoi diritti e delle tue responsabilità finanziarie, ad esempio nei confronti delle banche o delle compagnie assicurative? ",
         options: [
-          "·  Non ho molta chiarezza sui miei diritti e responsabilità finanziarie, preferisco fidarmi delle istituzioni o delle persone che mi forniscono servizi finanziari ",
-          "·  Sono consapevole dei miei diritti e responsabilità finanziarie di base, ma potrei approfondire meglio l'argomento",
-          "·  Conosco bene i miei diritti e responsabilità finanziarie e li faccio valere attivamente quando necessario",
+          "· Non ho molta chiarezza sui miei diritti e responsabilità finanziarie, preferisco fidarmi delle istituzioni o delle persone che mi forniscono servizi finanziari ",
+          "· Sono consapevole dei miei diritti e responsabilità finanziarie di base, ma potrei approfondire meglio l'argomento",
+          "· Conosco bene i miei diritti e responsabilità finanziarie e li faccio valere attivamente quando necessario",
         ],
         
       },
       {
         text: "18  Quando pianifichi il tuo futuro finanziario, quanto consideri importante l' aspetto della diversificazione? (una rispost· ",
         options: [
-          "·  Non ho molta chiarezza su cosa significhi diversificare i miei investimenti e non lo considero particolarmente importante ",
-          "·  Credo che diversificare i miei investimenti possa essere utile, ma non ho ancora implementato una strategia di diversificazione",
-          "·  Ritengo che la diversificazione sia fondamentale per mitigare i rischi e massimizzare i rendimenti dei miei investimenti, quindi la tengo sempre in considerazione quando pianifico il mio futuro finanziario",
+          "· Non ho molta chiarezza su cosa significhi diversificare i miei investimenti e non lo considero particolarmente importante ",
+          "· Credo che diversificare i miei investimenti possa essere utile, ma non ho ancora implementato una strategia di diversificazione",
+          "· Ritengo che la diversificazione sia fondamentale per mitigare i rischi e massimizzare i rendimenti dei miei investimenti, quindi la tengo sempre in considerazione quando pianifico il mio futuro finanziario",
         ],
        
 
@@ -207,9 +207,9 @@ let questions = [
       {
         text: "19  Quando hai a che fare con questioni finanziarie complesse, preferisci: (una rispost· ",
         options: [
-          "·  Prendere decisioni da solo/sola, anche se significa affrontare qualche difficoltà nel processo decisionale",
-          "·  Richiedere il parere di esperti o consulenti finanziari per avere un opinione esterna e prendere decisioni più informate",
-          "·  Evitare del tutto le questioni finanziarie complesse, sperando che si risolvano da sole nel tempo",
+          "· Prendere decisioni da solo/sola, anche se significa affrontare qualche difficoltà nel processo decisionale",
+          "· Richiedere il parere di esperti o consulenti finanziari per avere un opinione esterna e prendere decisioni più informate",
+          "· Evitare del tutto le questioni finanziarie complesse, sperando che si risolvano da sole nel tempo",
         ],
         
 
@@ -217,10 +217,10 @@ let questions = [
       {
         text: "20  Quando guardi al futuro, quali sono le tue principali preoccupazioni finanziarie? (massimo due risposte)",
         options: [
-          "·  La possibilità di non avere abbastanza risparmi per il pensionamento",
-          "·  L'incapacità di far fronte a spese impreviste, come cure mediche costose o riparazioni di emergenza",
-          "·  La paura di perdere il lavoro o di subire una riduzione del reddito nel tempo",
-          "·  Il timore di non riuscire a raggiungere i miei obiettivi finanziari a lungo termine, come l'acquisto di una casa o il finanziamento dell'istruzione dei figli ",
+          "· La possibilità di non avere abbastanza risparmi per il pensionamento",
+          "· L'incapacità di far fronte a spese impreviste, come cure mediche costose o riparazioni di emergenza",
+          "· La paura di perdere il lavoro o di subire una riduzione del reddito nel tempo",
+          "· Il timore di non riuscire a raggiungere i miei obiettivi finanziari a lungo termine, come l'acquisto di una casa o il finanziamento dell'istruzione dei figli ",
         ],
         
 

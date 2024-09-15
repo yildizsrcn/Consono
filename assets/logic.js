@@ -6,9 +6,28 @@ let groupAScore = 0;
 let groupBScore = 0;
 let groupCScore = 0;
 
+let timerInterval;
+let timeElapsed = 0;
+const MAX_TIME = 15 * 60;
+
 function startAssessment() {
     console.log("Starting assessment");
     displayApplicantInfoForm();
+    startTimer();
+}
+function startTimer() {
+    timerInterval = setInterval(updateTimer, 1000);
+}
+function updateTimer() {
+    timeElapsed++;
+    const minutes = Math.floor(timeElapsed / 60);
+    const seconds = timeElapsed % 60;
+    document.getElementById("time").textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+    if (timeElapsed >= MAX_TIME) {
+        clearInterval(timerInterval);
+        endAssessment();
+    }
 }
 
 function displayApplicantInfoForm() {
@@ -43,6 +62,8 @@ function submitApplicantInfo(event) {
 
 function displayNextQuestion() {
     console.log("Displaying next question", currentQuestionIndex);
+    timeElapsed = 0;
+    document.getElementById("time").textContent = "00:00";
     
     if (currentQuestionIndex >= questions.length) {
         endAssessment();
@@ -66,14 +87,14 @@ function showQuestion(questionData) {
 }
 
 function handleAnswer(userChoice) {
-    console.log("User chose:", userChoice);
+    console.log(`Question ${currentQuestionIndex + 1}: User chose: ${userChoice}`);
 
     let group;
     switch (currentQuestionIndex) {
         case 0:
-            if (["aumento dei prezzi (cibo, energia, ecc)", "riduzione del mio reddito familiare", "aumento dei costi per gli alloggi (acquisto / affitto)", "rimborsare i debiti (mutui, carte di credito, debiti di altra natura)", "incremento delle spese mediche", "incremento spese per i figli (ad esempio scuola)"].includes(userChoice)) {
+            if (["· aumento dei prezzi (cibo, energia, ecc)", "· riduzione del mio reddito familiare", "· aumento dei costi per gli alloggi (acquisto / affitto)", "· rimborsare i debiti (mutui, carte di credito, debiti di altra natura)", "· incremento delle spese mediche", "· incremento spese per i figli (ad esempio scuola)"].includes(userChoice)) {
                 group = 'A';
-            } else if (["non riuscire a risparmiare (spendo tutto ciò che guadagno)", "incremento delle spese mediche", "incremento spese per i figli (ad esempio scuola)"].includes(userChoice)) {
+            } else if (["· non riuscire a risparmiare (spendo tutto ciò che guadagno)", "· incremento delle spese mediche", "· incremento spese per i figli (ad esempio scuola)"].includes(userChoice)) {
                 group = 'B';
             } else {
                 group = 'C';
@@ -91,7 +112,7 @@ function handleAnswer(userChoice) {
         case 2:
             if (["quando mi trovo in una situazione di crisi finanziaria (debiti, spese impreviste, riduzione dello stipendio, perdita del lavoro di un familiare, poca liquidità)"].includes(userChoice)) {
                 group = 'A';
-            } else if (["quando devo prendere una decisione importante come ad esempio comperare una casa"].includes(userChoice)) {
+            } else if ([". quando devo prendere una decisione importante come ad esempio comperare una casa"].includes(userChoice)) {
                 group = 'B';
             } else {
                 group = 'C';
@@ -271,7 +292,7 @@ case 12:
         default:
             console.log("Invalid question index");
     }
-
+    console.log(`Group assigned: ${group}`);
     switch (group) {
         case 'A':
             groupAScore++;
@@ -283,15 +304,22 @@ case 12:
             groupCScore++;
             break;
     }
-
+    console.log(`Current scores - A: ${groupAScore}, B: ${groupBScore}, C: ${groupCScore}`);
+    
     currentQuestionIndex++;
     displayNextQuestion();
 }
 
 function endAssessment() {
     console.log("Ending assessment");
+    clearInterval(timerInterval);
+    timeElapsed = 0;
+    document.getElementById("time").textContent = "00:00";
     const totalResponses = groupAScore + groupBScore + groupCScore;
+    console.log(`Total responses calculated: ${totalResponses}`);
+    
     const highestGroup = getHighestScoringGroup();
+    console.log(`Highest scoring group detected: ${highestGroup.group} with ${highestGroup.score} responses`);
 
     const applicantInfo = JSON.parse(localStorage.getItem('currentApplicant'));
     const testResults = {
@@ -304,13 +332,34 @@ function endAssessment() {
         totalResponses,
         highestGroup
     };
+    console.log("Final testResults object:", JSON.stringify(testResults, null, 2));
 
     localStorage.setItem(`testResult_${Date.now()}`, JSON.stringify(testResults));
 
     displayAssessmentResult(testResults);
 }
 
+function getHighestScoringGroup() {
+    const scores = [
+        { group: 'A', score: groupAScore },
+        { group: 'B', score: groupBScore },
+        { group: 'C', score: groupCScore }
+    ];
+    console.log("Scores array:", JSON.stringify(scores, null, 2));
+
+    const highestGroup = scores.reduce((max, current) => 
+        max.score > current.score ? max : current
+    );
+
+    console.log(`Highest scoring group found: ${highestGroup.group} with ${highestGroup.score} responses`);
+    
+    return highestGroup;
+}
+
 function displayAssessmentResult(testResults) {
+    console.log("Displaying assessment results");
+    console.log(JSON.stringify(testResults, null, 2)); // Log the entire testResults object
+
     const container = document.getElementById("question-container");
     container.innerHTML = `
         <h2>Self-Assessment Results</h2>
@@ -320,6 +369,12 @@ function displayAssessmentResult(testResults) {
         <p>Email: ${testResults.applicantInfo.email}</p>
         <p>Total responses collected: ${testResults.totalResponses}</p>
         <p>The highest scoring group is ${testResults.highestGroup.group}, with ${testResults.highestGroup.score} responses.</p>
+        <div>
+            <h3>Detailed Scores:</h3>
+            <p>Group A: ${testResults.scores.A}</p>
+            <p>Group B: ${testResults.scores.B}</p>
+            <p>Group C: ${testResults.scores.C}</p>
+        </div>
         <button onclick="viewReports()">View Reports</button>
     `;
 }
