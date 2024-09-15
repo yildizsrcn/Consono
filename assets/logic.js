@@ -119,45 +119,45 @@ function handleAnswer(userChoice) {
             }
             break;
 
-            case 3:
-                if (["l’assicurazione previene un imprevisto"].includes(userChoice)) {
+        case 3:
+            if (["l’assicurazione previene un imprevisto"].includes(userChoice)) {
                     group = 'A';
-                } else if (["l’assicurazione annulla gli effetti derivanti dall’imprevisto"].includes(userChoice)) {
-                    group = 'B';
-                } else {
-                    group = 'C';
-                }
-                break;
+            } else if (["l’assicurazione annulla gli effetti derivanti dall’imprevisto"].includes(userChoice)) {
+                group = 'B';
+            } else {
+                group = 'C';
+            }
+            break;
 
-                case 4:
-                    if (["vorrei che qualcuno mi dicesse esattamente che cosa fare"].includes(userChoice)) {
-                        group = 'A';
-                    } else if (["voglio poter scegliere da sola / solo, ma vorrei che qualcuno potesse ‘validare’ la mia decisione"].includes(userChoice)) {
-                        group = 'B';
-                    } else {
-                        group = 'C';
-                    }
-                    break;
+        case 4:
+            if (["vorrei che qualcuno mi dicesse esattamente che cosa fare"].includes(userChoice)) {
+                group = 'A';
+            } else if (["voglio poter scegliere da sola / solo, ma vorrei che qualcuno potesse ‘validare’ la mia decisione"].includes(userChoice)) {
+                group = 'B';
+            } else {
+                group = 'C';
+            }
+            break;
 
-                    case 5:
-                        if (["sì, sarebbe un sollievo avere una persona con cui poter parlare delle mie difficoltà finanziarie","non voglio che altri sappiano che ho dei debiti","non saprei nemmeno che cosa chiedere","non ho soldi a sufficienza per parlarne"].includes(userChoice)) {
-                            group = 'A';
-                        } else if (["sì, vorrei delle indicazioni su come gestire il mio bilancio personale","nella mia famiglia non si parla di soldi"].includes(userChoice)) {
-                            group = 'B';
-                        } else {
-                            group = 'C';
-                        }
-                        break;
+        case 5:
+            if (["sì, sarebbe un sollievo avere una persona con cui poter parlare delle mie difficoltà finanziarie","non voglio che altri sappiano che ho dei debiti","non saprei nemmeno che cosa chiedere","non ho soldi a sufficienza per parlarne"].includes(userChoice)) {
+                group = 'A';
+            } else if (["sì, vorrei delle indicazioni su come gestire il mio bilancio personale","nella mia famiglia non si parla di soldi"].includes(userChoice)) {
+                group = 'B';
+            } else {
+                group = 'C';
+            }
+            break;
 
-                        case 6:
-                            if (["anticipo dello stipendio","prestiti a breve termine","budgeting e pianificazione"].includes(userChoice)) {
-                                group = 'A';
-                            } else if (["carte di credito e scoperti di conto","risparmio di denaro","assicurazioni"].includes(userChoice)) {
-                                group = 'B';
-                            } else {
-                                group = 'C';
-                            }
-                            break;
+        case 6:
+            if (["anticipo dello stipendio","prestiti a breve termine","budgeting e pianificazione"].includes(userChoice)) {
+                group = 'A';
+            } else if (["carte di credito e scoperti di conto","risparmio di denaro","assicurazioni"].includes(userChoice)) {
+                group = 'B';
+            } else {
+                group = 'C';
+            }
+            break;
 
                             case 7:
                                 if (["non serve leggere, la firma è una pura formalità perché si tratta di una normativa standard, già controllata dagli enti di vigilanza"].includes(userChoice)) {
