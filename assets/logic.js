@@ -1,6 +1,6 @@
 // logic.js
 
-let currentQuestionIndex = 0;
+
 const GROUPS = ['A', 'B', 'C'];
 let groupAScore = 0;
 let groupBScore = 0;
@@ -9,11 +9,11 @@ let groupCScore = 0;
 let timerInterval;
 let timeElapsed = 0;
 const MAX_TIME = 15 * 60;
+let currentQuestionIndex = 0;
 
 function startAssessment() {
     console.log("Starting assessment");
     displayApplicantInfoForm();
-    startTimer();
 }
 function startTimer() {
     timerInterval = setInterval(updateTimer, 1000);
@@ -57,7 +57,23 @@ function submitApplicantInfo(event) {
         email: form.elements['email'].value
     };
     localStorage.setItem('currentApplicant', JSON.stringify(applicantInfo));
+    startTimer();
     displayNextQuestion();
+}
+function startTimer() {
+    timerInterval = setInterval(updateTimer, 1000);
+}
+
+function updateTimer() {
+    timeElapsed++;
+    const minutes = Math.floor(timeElapsed / 60);
+    const seconds = timeElapsed % 60;
+    document.getElementById("time").textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+    if (timeElapsed >= MAX_TIME) {
+        clearInterval(timerInterval);
+        endAssessment();
+    }
 }
 
 function displayNextQuestion() {
