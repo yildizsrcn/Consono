@@ -104,8 +104,8 @@ function showQuestion(questionData) {
 
 function handleAnswer(userChoice) {
     console.log(`Question ${currentQuestionIndex + 1}: User chose: ${userChoice}`);
-
-    let group;
+    
+    let group = 'C';
     switch (currentQuestionIndex) {
         case 0:
             if (["· aumento dei prezzi (cibo, energia, ecc)", "· riduzione del mio reddito familiare", "· aumento dei costi per gli alloggi (acquisto / affitto)", "· rimborsare i debiti (mutui, carte di credito, debiti di altra natura)", "· incremento delle spese mediche", "· incremento spese per i figli (ad esempio scuola)"].includes(userChoice)) {
@@ -113,17 +113,16 @@ function handleAnswer(userChoice) {
             } else if (["· non riuscire a risparmiare (spendo tutto ciò che guadagno)", "· incremento delle spese mediche", "· incremento spese per i figli (ad esempio scuola)"].includes(userChoice)) {
                 group = 'B';
             } else {
-                group = 'C';
+                console.log("Case 0: No match found");
             }
             break;
-        case 1:
+        /*case 1:
             if (["imparare a pianificare le spese in relazione alle entrate", "contenere le spese eccessive che affronto", "identificare gli sprechi economici", "conoscere i temi fiscali (tasse e imposte)", "capire quanti soldi mi servono per il mio stile di vita"].includes(userChoice)) {
                 group = 'A';
             } else if (["conoscere i temi fiscali (tasse e imposte)", "migliorare la mia propensione al risparmio", "riuscire a risparmiare", "capire se mi serve un'assicurazione e per che cosa"].includes(userChoice)) {
                 group = 'B';
-            } else {
-                group = 'C';
             }
+
             break;
         case 2:
             if (["quando mi trovo in una situazione di crisi finanziaria (debiti, spese impreviste, riduzione dello stipendio, perdita del lavoro di un familiare, poca liquidità)"].includes(userChoice)) {
@@ -304,10 +303,12 @@ case 12:
                                                                                     group = 'C';
                                                                                 }
                                                                                 break;
+                                                                                */
         // Add more cases for other question indices as needed
         default:
             console.log("Invalid question index");
     }
+
     console.log(`Group assigned: ${group}`);
     switch (group) {
         case 'A':
@@ -321,19 +322,24 @@ case 12:
             break;
     }
     console.log(`Current scores - A: ${groupAScore}, B: ${groupBScore}, C: ${groupCScore}`);
-    
+
     currentQuestionIndex++;
     displayNextQuestion();
 }
 
 function endAssessment() {
     console.log("Ending assessment");
+    console.log(`Current question index: ${currentQuestionIndex}`);
+    console.log(`Questions length: ${questions.length}`);
+    console.log(`Time elapsed: ${timeElapsed}`);
+    console.log(`MAX_TIME: ${MAX_TIME}`);
+
     clearInterval(timerInterval);
     timeElapsed = 0;
     document.getElementById("time").textContent = "00:00";
     const totalResponses = groupAScore + groupBScore + groupCScore;
     console.log(`Total responses calculated: ${totalResponses}`);
-    
+
     const highestGroup = getHighestScoringGroup();
     console.log(`Highest scoring group detected: ${highestGroup.group} with ${highestGroup.score} responses`);
 
