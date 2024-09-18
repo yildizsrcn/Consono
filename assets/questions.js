@@ -4,8 +4,8 @@ let questions = [
     {
         text: "1 Cosa ti preoccupa di più, in questo momento, dal punto di vista finanziario? (massimo due risposte)",
         options: [
-        "A",
-        "B",
+        "aumento dei prezzi (cibo, energia, ecc)",
+        "riduzione del mio reddito familiare",
         "aumento dei costi per gli alloggi (acquisto / affitto)",
         "non riuscire a risparmiare (spendo tutto ciò che guadagno)",
         "rimborsare i debiti (mutui, carte di credito, debiti di altra natura)",
@@ -34,7 +34,7 @@ let questions = [
         "capire se mi serve un’assicurazione e per che cosa",
       ],
      
-    }, 
+    }, /*
     {
       text:
         "3 Quando potresti avere più bisogno di un supporto per le tue scelte finanziarie? (una risposta)?",
@@ -224,6 +224,6 @@ let questions = [
         ],
        
  
-      }, 
+      }, */
   ];
  
