@@ -1,8 +1,8 @@
 // logic.js with some optimization ideas:
 // 1. State Management: Scores and other variables are moved to a state object to avoid global variables.
-// 2.	Form Submission and Timer: The form handling is cleaned up by attaching the event listener programmatically.
-// 3.	Timer Handling: The logic for updating the timer is simplified for clarity.
-// 4.	Question Rules: The getGroupRulesForQuestion function was created to make rules retrieval cleaner and modular.
+// 2. Form Submission and Timer: The form handling is cleaned up by attaching the event listener programmatically.
+// 3. Timer Handling: The logic for updating the timer is simplified for clarity.
+// 4. Question Rules: The getGroupRulesForQuestion function was created to make rules retrieval cleaner and modular.
 
 
 const GROUPS = ['A', 'B', 'C'];
