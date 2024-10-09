@@ -9,28 +9,25 @@
     <title>Consono</title>
 </head>
 <body>
-<header>
-    <div class="margin">
-    <h1>Financial Self Assessment</h1>
+    <div id="entrance-screen" style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100vh; background-color: #f0f0f0;">
+        <img src="./assets/image/Entrance.png" alt="Entrance Image" style="max-width: 80%; max-height: 80%; object-fit: contain;">
+        <button id="start-button" onclick="startAssessment()" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);">Start</button>
     </div>
-    <div class="timer">Time: <span id="time">0</span></div>
-  </header>
     <br><br><br><br><br>
+
+    <header>
+        <div class="margin">
+            <h1>Financial Self Assessment</h1>
+        </div>
+        <div class="timer">Time: <span id="time">0</span></div>
+    </header>
     <div id="content-wrapper">
-        <button id="start-button" onclick="startAssessment()">Start</button>
-      <img src="./assets/image/gift.jpg" alt="Consono-image" class="intro-image image" />
-      <p>
-        Prova a rispondere alle seguenti domande di autovalutazione entro il limite di tempo. 
-        <br>
-        Tieni presente che le risposte verranno mostrate per quindici secondi!
-      </p>
-      </div>
     <div id="question-container"></div>
-<br><br><br><br>
-<footer>
-    <img src="./assets/image/Logo.JPG" alt="logo" class="logo-image">
-    <p class="reserve"><b>Proprietà Consono:</b> tutti i diritti sono riservati.</p>
-    <div class="footer-line"></div>
-  </footer>
+    <br><br><br><br>
+    <footer>
+        <img src="./assets/image/Logo.JPG" alt="logo" class="logo-image">
+        <p class="reserve"><b>Proprietà Consono:</b> tutti i diritti sono riservati.</p>
+        <div class="footer-line"></div>
+    </footer>
 </body>
 </html>

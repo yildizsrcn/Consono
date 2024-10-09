@@ -12,6 +12,8 @@ const MAX_TIME = 15 * 60;
 let currentQuestionIndex = 0;
 
 function startAssessment() {
+    document.getElementById('entrance-screen').style.display = 'none';
+    document.getElementById('content-wrapper').style.display = 'block';
     console.log("Starting assessment");
     console.log("Total questions:", questions.length);
     displayApplicantInfoForm();
