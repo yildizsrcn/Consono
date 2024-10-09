@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consono Test Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Consono Test Results</h1>
+    <div id="results"></div>
+
+    <script>
+        fetch('http://localhost:3000/api/results')
+            .then(response => response.json())
+            .then(data => {
+                const resultsDiv = document.getElementById('results');
+                resultsDiv.innerHTML = '<table>' +
+                    '<tr><th>Name</th><th>Company</th><th>Highest Scoring Group</th><th>Total Responses</th></tr>';
+                
+                data.forEach(result => {
+                    resultsDiv.innerHTML += `<tr>
+                        <td>${result.applicantInfo.name}</td>
+                        <td>${result.applicantInfo.company}</td>
+                        <td>${result.highestGroup.group}</td>
+                        <td>${result.totalResponses}</td>
+                    </tr>`;
+                });
+
+                resultsDiv.innerHTML += '</table>';
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>

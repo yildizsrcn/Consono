@@ -244,6 +244,17 @@ function endAssessment() {
         totalResponses,
         highestGroup
     };
+    fetch('http://localhost:3000/api/results', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(testResults),
+    })
+    .then(response => response.json())
+    .then(data => console.log('Success:', data))
+    .catch((error) => console.error('Error:', error));
+    
     console.log("Final testResults object:", JSON.stringify(testResults, null, 2));
 
     localStorage.setItem(`testResult_${Date.now()}`, JSON.stringify(testResults));
