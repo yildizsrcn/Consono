@@ -1,6 +1,6 @@
 let questions = [
     {
-        text: "1 Cosa ti preoccupa di più, in questo momento, dal punto di vista finanziario? (massimo due risposta)",
+        text: "1 Cosa ti preoccupa di più, in questo momento, dal punto di vista finanziario?",
         options: [
             "aumento dei prezzi (cibo, energia, ecc)",
             "riduzione del mio reddito familiare",
@@ -17,7 +17,7 @@ let questions = [
         ]
     },
     {
-        text: "2 Qual è la tua necessità in ambito finanziario ?(massimo due risposta)",
+        text: "2 Qual è la tua necessità in ambito finanziario ?",
         options: [
             "imparare a pianificare le spese in relazione alle entrate",
             "contenere le spese eccessive che affronto",
@@ -32,7 +32,7 @@ let questions = [
         ]
     },
     {
-        text: "3 Quando potresti avere più bisogno di un supporto per le tue scelte finanziarie? (una risposta)",
+        text: "3 Quando potresti avere più bisogno di un supporto per le tue scelte finanziarie?",
         options: [
             "quando devo prendere una decisione importante come ad esempio comperare una casa",
             "quando mi trovo in una situazione di crisi finanziaria (debiti, spese impreviste, riduzione dello stipendio, perdita del lavoro di un familiare, poca liquidità)",
@@ -40,7 +40,7 @@ let questions = [
         ]
     },
     {
-        text: "4 È capitato a chiunque nella vita di vivere un imprevisto con implicazioni economiche inattese,cioè spese non previste, anche di entità considerevole. Le persone si tutelano per situazioni simili con le polizze di assicurazione. Perchè? (una risposta) ",
+        text: "4 È capitato a chiunque nella vita di vivere un imprevisto con implicazioni economiche inattese,cioè spese non previste, anche di entità considerevole. Le persone si tutelano per situazioni simili con le polizze di assicurazione. Perchè?",
         options: [
             "l’assicurazione sostiene in totale o in parte le conseguenze economiche dell’imprevisto",
             "l’assicurazione annulla gli effetti derivanti dall’imprevisto",
@@ -48,7 +48,7 @@ let questions = [
         ]
     },
     {
-        text: "5 Rispetto alle tue finanze personali, quale frase ti rappresenta? (una risposta) ",
+        text: "5 Rispetto alle tue finanze personali, quale frase ti rappresenta?",
         options: [
             "voglio poter scegliere da sola / solo, ma vorrei che qualcuno potesse ‘validare’ la mia decisione",
             "vorrei avere delle indicazioni sulla cui base poter fare scelte consapevoli",
@@ -82,7 +82,7 @@ let questions = [
         ]
     },
     {
-        text: "8 Vuoi aprire un nuovo conto corrente! Hai scelto la banca e ora ti viene richiesto di sottoscrivere il contratto.Come agisci? (una risposta) ",
+        text: "8 Vuoi aprire un nuovo conto corrente! Hai scelto la banca e ora ti viene richiesto di sottoscrivere il contratto.Come agisci?",
         options: [
             "leggo tutto il documento, se ci sono cose che non capisco chiedo per ottenere informazioni, solo quando mi è tutto chiaro firmo",
             "non serve leggere, la firma è una pura formalità perché si tratta di una normativa standard, già controllata dagli enti di vigilanza",
@@ -90,7 +90,7 @@ let questions = [
         ]
     },
     {
-        text: "9 In quale affermazione ti ritrovi di più? (una risposta) ",
+        text: "9 In quale affermazione ti ritrovi di più?",
         options: [
             "fatico ad arrivare a fine mese e potrei avere bisogno di un supporto",
             "sono ok con la gestione dei miei soldi, ma vorrei migliorare",
@@ -99,7 +99,7 @@ let questions = [
         ]
     },
     {
-        text: "10 Hai un conto corrente senza spese di gestione. Ricevi interessi con tasso dell’1% annuo. Con l’inflazione al 5% annua, dopo un anno, con il denaro depositato sul tuo conto corrente, sarai in grado di acquistare: (una risposta) ",
+        text: "10 Hai un conto corrente senza spese di gestione. Ricevi interessi con tasso dell’1% annuo. Con l’inflazione al 5% annua, dopo un anno, con il denaro depositato sul tuo conto corrente, sarai in grado di acquistare?",
         options: [
             "le stesse cose che puoi acquistare oggi",
             "meno di quello che puoi acquistare oggi",
@@ -107,7 +107,7 @@ let questions = [
         ]
     },
     {
-        text: "11 Come gestisci le tue utenze? (una risposta) ",
+        text: "11 Come gestisci le tue utenze?",
         options: [
             "non gestisco le bollette / le gestisce qualcun altro",
             "non so fare previsioni sulle mie bollette, le gestisco man mano che arrivano",
@@ -116,7 +116,7 @@ let questions = [
         ]
     },
     {
-        text: "12  Come imposti la tua gestione delle finanze? Scegli la frase che ti rappresenta di più (una risposta) ",
+        text: "12  Come imposti la tua gestione delle finanze? Scegli la frase che ti rappresenta di più?",
         options: [
             "ho una idea esatta delle mie spese ricorrenti, tengo segnate tutte le spese che faccio e le pianifico nel mese ",
             "non ho idea di quanto spendo nel mese per cibo, utenze, generi di prima necessità",
@@ -126,7 +126,7 @@ let questions = [
         ]
     },
     {
-        text: "13  Ti tamponano mentre sei alla guida della tua auto. Proponi di compilare la constatazione amichevole. L’altro automobilista dice che la colpa è tua, mentre tu non la pensi così. Che cosa fai? (una risposta) ",
+        text: "13  Ti tamponano mentre sei alla guida della tua auto. Proponi di compilare la constatazione amichevole. L’altro automobilista dice che la colpa è tua, mentre tu non la pensi così. Che cosa fai?",
         options: [
             "cerco dei testimoni che confermino la mia versione",
             "faccio scrivere sia la mia versione che la sua",
@@ -135,7 +135,7 @@ let questions = [
         ]
     },
     {
-        text: "14  Quando pianifichi il tuo bilancio mensile, quanto consideri importante il risparmio? (una risposta) ",
+        text: "14  Quando pianifichi il tuo bilancio mensile, quanto consideri importante il risparmio?",
         options: [
             "Il risparmio è la mia priorità assoluta, cerco di mettere da parte una parte consistente del mio reddito ogni mese",
             "Il risparmio è importante, ma spesso finisco per spenderlo in altre cose prima di metterlo da parte",
@@ -143,7 +143,7 @@ let questions = [
         ]
     },
     {
-        text: "15  Quando investi i tuoi soldi, qual è il tuo principale obiettivo? (una risposta) ",
+        text: "15  Quando investi i tuoi soldi, qual è il tuo principale obiettivo?",
         options: [
             "Voglio ottenere un rendimento sicuro anche se modesto, senza rischiare troppo il capitale iniziale ",
             "Voglio massimizzare il rendimento dei miei investimenti, anche se ciò comporta un certo livello di rischio",
@@ -152,7 +152,7 @@ let questions = [
     },
 
     {
-        text: "16  Quando ti trovi di fronte a un acquisto importante, come una casa o un auto, come pianifichi di finanziarlo? (una risposta) ",
+        text: "16  Quando ti trovi di fronte a un acquisto importante, come una casa o un auto, come pianifichi di finanziarlo?",
         options: [
             "Studio attentamente le opzioni di finanziamento disponibili e scelgo quella che mi offre le migliori condizioni in termini di tassi d interesse e flessibilia di pagamento",
             "Mi affido a prestiti bancari o finanziamenti per coprire il costo dell'n acquisto",
@@ -160,7 +160,7 @@ let questions = [
         ]
     },
     {
-        text: "17  Quanto sei consapevole dei tuoi diritti e delle tue responsabilità finanziarie, ad esempio nei confronti delle banche o delle compagnie assicurative? (una risposta) ",
+        text: "17  Quanto sei consapevole dei tuoi diritti e delle tue responsabilità finanziarie, ad esempio nei confronti delle banche o delle compagnie assicurative?",
         options: [
             "Non ho molta chiarezza sui miei diritti e responsabilità finanziarie, preferisco fidarmi delle istituzioni o delle persone che mi forniscono servizi finanziari ",
             "Sono consapevole dei miei diritti e responsabilità finanziarie di base, ma potrei approfondire meglio l'argomento",
@@ -168,7 +168,7 @@ let questions = [
         ]
     },
     {
-        text: "18  Quando pianifichi il tuo futuro finanziario, quanto consideri importante l' aspetto della diversificazione? (una risposta) ",
+        text: "18  Quando pianifichi il tuo futuro finanziario, quanto consideri importante l' aspetto della diversificazione?",
         options: [
             "Non ho molta chiarezza su cosa significhi diversificare i miei investimenti e non lo considero particolarmente importante ",
             "Credo che diversificare i miei investimenti possa essere utile, ma non ho ancora implementato una strategia di diversificazione",
@@ -176,7 +176,7 @@ let questions = [
         ]
     },
     {
-        text: "19  Quando hai a che fare con questioni finanziarie complesse, preferisci: (una risposta) ",
+        text: "19  Quando hai a che fare con questioni finanziarie complesse, preferisci?",
         options: [
             "Prendere decisioni da solo/sola, anche se significa affrontare qualche difficoltà nel processo decisionale",
             "Richiedere il parere di esperti o consulenti finanziari per avere un opinione esterna e prendere decisioni più informate",
