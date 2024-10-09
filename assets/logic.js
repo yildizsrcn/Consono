@@ -77,7 +77,7 @@ function showQuestion(questionData) {
         <h2>${questionData.text}</h2>
         <ul>
             ${questionData.options.map((option, index) => 
-                `<li><button onclick="handleAnswer('${option}')">${option}</button></li>`
+                `<li><button onclick="handleAnswer('${option}')">${option.replace(/^[A-Z]\.?\s?/, '')}</button></li>`
             ).join('')}
         </ul>
     `;
