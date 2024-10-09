@@ -75,9 +75,11 @@ function showQuestion(questionData) {
     const questionContainer = document.getElementById("question-container");
     questionContainer.innerHTML = `
         <h2>${questionData.text}</h2>
-        ${questionData.options.map((option, index) => 
-            `<button onclick="handleAnswer('${option}')">${String.fromCharCode(65 + index)} ${option}</button>`
-        ).join('')}
+        <ul>
+            ${questionData.options.map((option, index) => 
+                `<li><button onclick="handleAnswer('${option}')">${option}</button></li>`
+            ).join('')}
+        </ul>
     `;
 }
 
