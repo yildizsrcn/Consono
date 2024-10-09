@@ -8,6 +8,15 @@
     width: 100%;
 }
 
+body {
+    font-size: 22px; /* Adjust as needed */
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, sans-serif;
+}
+
 h1{
 
     padding-left: 40px;
@@ -126,3 +135,11 @@ p{
     }
     
   
+.question-text {
+    font-size: 22px; /* You can adjust this value as needed */
+}
+
+.answer-option {
+    font-size: 15px; /* Adjust as needed */
+    font-family: Arial, sans-serif;
+}
