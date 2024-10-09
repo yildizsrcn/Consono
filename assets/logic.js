@@ -133,8 +133,8 @@ function handleAnswer(userChoice) {
         { condition: ['carte', 'risparmio', 'assicurazioni'], group: 'B' },
 
         // Question 7
-        { condition: ['leggere', 'formalità'], group: 'A' },
-        { condition: ['raccontati', 'comprendo'], group: 'B' },
+        { condition: ['significhi', 'molta'], group: 'A' },
+        { condition: ['Credo', 'ancora'], group: 'B' },
 
         // Question 8
         { condition: ['arrivare', 'supporto'], group: 'A' },
@@ -150,18 +150,18 @@ function handleAnswer(userChoice) {
 
         // Question 11
         { condition: ['esatta', 'spese', 'pianifico'], group: 'A' },
-        { condition: ['non', 'idea', 'spendere'], group: 'B' },
+        { condition: ['non', 'idea', 'passare'], group: 'B' },
 
         // Question 12
         { condition: ['testimoni', 'versione'], group: 'B' },
         { condition: ['riparare', 'assicurazione'], group: 'A' },
 
         // Question 13
-        { condition: ['priorità', 'consistente'], group: 'B' },
+        { condition: ['priorità', 'saperne'], group: 'B' },
         { condition: ['spesso', 'spenderlo'], group: 'A' },
 
         // Question 14
-        { condition: ['sicuro', 'modesto'], group: 'A' },
+        { condition: ['sicuro', 'saprei'], group: 'A' },
         { condition: ['equilibrato', 'rendimento'], group: 'B' },
 
         // Question 15

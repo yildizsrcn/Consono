@@ -84,8 +84,8 @@ let questions = [
     {
         text: "8 Vuoi aprire un nuovo conto corrente! Hai scelto la banca e ora ti viene richiesto di sottoscrivere il contratto.Come agisci?",
         options: [
-            "leggo tutto il documento, se ci sono cose che non capisco chiedo per ottenere informazioni, solo quando mi è tutto chiaro firmo",
-            "non serve leggere, la firma è una pura formalità perché si tratta di una normativa standard, già controllata dagli enti di vigilanza",
+            "Non ho molta chiarezza su cosa significhi diversificare i miei investimenti o non lo considero particolarmente importante",
+            "Credo che diversificare i miei investimenti possa essere utile, ma non ho ancora implementato (o non so come implementare) una strategia di diversificazione",
             "chiedo che mi vengano raccontati i contenuti del documento, perché tanto anche se leggo non comprendo le clausole che sono scritte con terminologia tecnica che non conosco"
         ]
     },
@@ -122,7 +122,8 @@ let questions = [
             "non ho idea di quanto spendo nel mese per cibo, utenze, generi di prima necessità",
             "se mi arriva una raccomandata tremo",
             "se capitasse un imprevisto, anche di modica entità, dovrei ricorrere a un prestito",
-            "conservo tutti gli scontrini e li controllo con l’estratto conto"
+            "conservo tutti gli scontrini e li controllo con l’estratto conto",
+            "Parto sempre con le buone intenzioni di controllare tutte le mie spese, ma mi perdo con il passare del tempo e rischio di non riuscire a controllare tutto"
         ]
     },
     {
@@ -139,7 +140,8 @@ let questions = [
         options: [
             "Il risparmio è la mia priorità assoluta, cerco di mettere da parte una parte consistente del mio reddito ogni mese",
             "Il risparmio è importante, ma spesso finisco per spenderlo in altre cose prima di metterlo da parte",
-            "Non riesco a risparmiare nulla, ogni mese arrivo a fine mese a stento"
+            "Non riesco a risparmiare nulla, ogni mese arrivo a fine mese a stento",
+            "Non so: vorrei saperne di più e approfondire il tema del “risparmio"
         ]
     },
     {
@@ -147,7 +149,8 @@ let questions = [
         options: [
             "Voglio ottenere un rendimento sicuro anche se modesto, senza rischiare troppo il capitale iniziale ",
             "Voglio massimizzare il rendimento dei miei investimenti, anche se ciò comporta un certo livello di rischio",
-            "Voglio investire in modo equilibrato, cercando di ottenere un buon rendimento senza espormi a troppi rischi"
+            "Voglio investire in modo equilibrato, cercando di ottenere un buon rendimento senza espormi a troppi rischi",
+            "Non saprei perchè non investo"
         ]
     },
 
